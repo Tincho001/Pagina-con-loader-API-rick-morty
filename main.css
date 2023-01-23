@@ -1,0 +1,88 @@
+*{
+    padding: 0%;
+   
+}
+
+body{background: rgb(139,213,143);
+    background: linear-gradient(90deg, rgba(139,213,143,1) 0%, rgba(66,219,35,0.958420868347339) 100%, rgba(5,103,183,1) 100%, rgba(7,53,150,1) 100%, rgba(0,255,4,1) 100%);
+
+    font-family: 'Creepster', cursive;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 4vw;
+}
+
+
+li {
+    list-style: none;
+    font-size: 1.8vw;
+ 
+}
+
+ul{
+    margin: 0;
+    height: 0;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.cosas {
+    display: flex;
+    flex-direction: column;
+
+}
+.loading {
+    
+        font-size: 7vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+.spiner{
+    border: 4px solid rgba(0, 0, 0,1);
+width: 60px; height: 60px;
+border-radius: 50%;
+border-left-color: transparent;
+animation: spin 0.5s linear infinite;
+
+}
+@keyframes spin{
+    0%{transform: rotate(0deg)
+}
+100%{transform: rotate(360deg);}}
+
+
+
+
+#characters {
+   
+    display: flex;
+    justify-content: center;
+}
+
+#characters > ul {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#characters > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 1rem 0 0;
+    border: 0.1rem solid rgb(7, 2, 2)
+ 
+
+}
+
+
